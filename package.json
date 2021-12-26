@@ -1,10 +1,10 @@
 {
-  "name": "ums",
+  "name": "onextweb",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng build --prod & nodemon app.js",
-    "start-build": "nodemon app.js & ng build --watch",
+    "start": "nodemon app.js",
+    "start-build": " ng build --watch & nodemon app.js ",
     "start-serve": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
