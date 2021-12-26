@@ -1,0 +1,12 @@
+{
+    "env" : {
+        "NODE_ENV" : "dev",
+        "NODE_PORT" : "8082",
+        "NODE_DATABASE" : "corso_nodejs",
+        "NODE_DATABASE_USER" : "root",
+        "NODE_DATABASE_PW" : "",
+        "NODE_DATABASE_URL" : "localhost",
+        "PORT":3000
+    }
+    
+}

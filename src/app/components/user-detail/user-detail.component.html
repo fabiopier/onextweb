@@ -1,0 +1,40 @@
+<form #f="ngForm">
+    {{user | json}}
+    <div>{{f | json}}</div>
+  
+    <input type="hidden" name="id" [(ngModel)]="user.id">
+    <div class="form-group">
+        <label for="firstname">First name</label>
+        <input name="firstname" id="firstname" [(ngModel)]="user.name" type="text">
+    </div>
+    <div class="form-group">
+        <label for="lastname">Last name</label>
+        <input name="lastname" id="lastname"[(ngModel)]="user.lastname" type="text">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input name="email" id="email" [(ngModel)]="user.email"type="text" >
+    </div>
+    <div class="form-group">
+        <label for="fiscalcode">Fiscale code</label>
+        <input name="fiscalcode" id="fiscalcode" [(ngModel)]="user.fiscalcode" type="text">
+    </div>
+    <div class="form-group">
+        <label for="province">Province</label>
+        <input name="province" id="province" [(ngModel)]="user.province" type="text">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input name="phone" id="phone" [(ngModel)]="user.phone" type="number">
+    </div>
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input name="age" id="age" [(ngModel)]="user.age" type="number">
+    </div>
+    <div class="">
+        <button (click)='saveUser()'>Save</button>
+    </div>
+    <div class="">
+        <button (click)='resetForm()'>Reset</button>
+    </div>
+</form>

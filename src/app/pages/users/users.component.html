@@ -1,0 +1,23 @@
+
+<div>welcome user page</div>
+<button (click)="newUser()">ADD</button>
+<div class="users">
+<table class="mat-table cdk-table mat-elevation-z8">
+  <caption>{{title}} ricevi dal padre</caption>
+  <tr>
+    <th>Name</th>
+    <th>Last name</th>
+    <th>Fiscal code</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Province</th>
+    <th>Age</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let user of users" app-user [user]="user"  (onDeleteUser)="deleteUserParent($event)" (onSelectUser)="selectUserParent($event)"></tr>
+</table>
+</div>
+
+<div class="usersdetails" *ngIf="userSelected" >
+  <app-user-detail [user]="userSelectedObject"></app-user-detail>
+</div>
