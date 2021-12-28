@@ -717,5 +717,13 @@ body {
   margin: 0;
 }
 /* Generic class*/
+.containerFull {
+  width: 100%;
+}
+.containerMaxWidth {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*# sourceMappingURL=styles.css.map*/

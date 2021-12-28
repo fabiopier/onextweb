@@ -1,0 +1,27 @@
+.navbar{
+    height: 100px;
+    background-color:black;
+    .navbar__logo{
+        float: left;
+        width:50%;
+        //background-color:red;
+        height: 100px;
+    }
+    .navbar__menu{
+        float: left;
+        width:50%;
+       // background-color:green;
+        height: 100px;
+    ul{
+       
+        li{
+            display: inline;
+            margin-right: 10px;
+            
+            a{
+                color: white;
+            }
+        }
+    }
+   }
+}
