@@ -1,32 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
 /* library*/
 $prefix: ".xx";
 
-$var-primary: #701F4A;//PRINCIPALE
-$var-primary-light: #8E295F;
-$var-primary-dark: #521133;
-
-$var-primary-moredark: #31061C;
-/* grey*/
-$var-r-trasparence: rgba(0, 0, 0, 0);
-
-$var-white:  #fff;
-$col-appbackground: #e6e6e6;
-$var-r-bg-disabled: #ecebed;
-$var-r-background-light-grey:#EFEFEF;
-$var-r-bg-light-grey-variant:#F7F7F7;
-$var-bg-disabled: #ecebed;
-$col-car-details: #e0e0e0;
-$var-light: #f5f5f5;
-$col-grey-section: #f1f5f6;
-$col-grey-line: #dedddd;
-$var-secondary-light: #dedddd;
-$var-secondary: #909090;
-$var-secondary-dark: #707070;
-$col-grey: #a2aab1;
-$var-dark: #212529;
-$var-black: #000;
-    
 /* color*/
+
+$var-primary:#0090DF;//PRINCIPALE
+$var-primary-dark:#02496F;
+$var-secondary:#FF3690;
+$var-secondary-light:#D56491;
+
+$var-trasparence: rgba(0, 0, 0, 0);
+$var-white:  #fff;
+$var-black: #000;
+$var-disabled: #ecebed;
+$var-light-grey:#EFEFEF;
+$var-grey: #909090;
+$var-dark: #212529;
+
 $var-success: #b0bc0d;
 $var-success-light: #c7d055;
 $var-success-dark: #7b8309;
@@ -36,194 +27,70 @@ $var-danger-dark: #991a27;
 $var-warning: #ecac00;
 $var-warning-light: #f3cd66;
 $var-warning-dark: #bc8900;
-$var-info: #106fb6;
-$var-info-light: #579acb;
-$var-info-dark: #0b4d7f;
-$var-title-bold: #F6D046;
 
 /* font*/
-//$var-font-family: "Heebo", sans-serif;
 $var-font-family:'Roboto',sans-serif;
-
-/* radius*/
-$var-button-border-radius: 4px;
-$var-r-button-border-radius: 2px;
+$var-secondary-font-family:'Lato', sans-serif;
 
 /* shadows*/
-$var-r-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
+$var-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
 
 /* le seguenti classi generate vengono richiamate con il prefisso .xx */
 
 #{$prefix} {
-    &-bg-primary {
-        background-color: $var-primary;
-    }
-    &-bg-primary-light {
-        background-color: $var-primary-light;
-    }
-    &-bg-secondary {
-        background-color: $var-secondary;
-    }
-    &-bg-secondary-light {
-        background-color: $var-secondary-light;
-    }
-    &-bg-primary-moredark {
-        background-color: $var-primary-moredark;
-      }
-    &-bg-success {
-        background-color: $var-success;
-    }
-    &-bg-success-light {
-        background-color: $var-success-light;
-    }
-    &-bg-danger {
-        background-color: $var-danger;
-    }
-    &-bg-danger-light {
-        background-color: $var-danger-light;
-    }
-    &-bg-warning {
-        background-color: $var-warning;
-    }
-    &-bg-warning-light {
-        background-color: $var-warning-light;
-    }
-    &-bg-dark {
-        background-color: $var-dark;
-    }
-    &-bg-info {
-        background-color: $var-info;
-    }
-    &-bg-info-light {
-        background-color: $var-info-light;
-    }
-    &-bg-light {
-        background-color: $var-light;
-    }
-    &-bg-white {
-        background-color: $var-white;
-    }
-    &-bg-black {
-        background-color: $var-black;
-    }
+
     /* COLOR TEXT */
     &-text-primary {
         color: $var-primary;
     }
-    &-text-primary-light {
-        color: $var-primary-light;
-    }
     &-text-secondary {
         color: $var-secondary;
     }
-    &-text-secondary-light {
-        color: $var-secondary-light;
-    }
-    &-text-success {
-        color: $var-success;
-    }
-    &-text-success-light {
-        color: $var-success-light;
-    }
-    &-text-danger {
-        color: $var-danger;
-    }
-    &-text-danger-light {
-        color: $var-danger-light;
-    }
-    &-text-warning {
-        color: $var-warning;
-    }
-    &-text-warning-light {
-        color: $var-warning-light;
-    }
-    &-text-dark {
-        color: $var-dark;
-    }
-    &-text-info {
-        color: $var-info;
-    }
-    &-text-info-light {
-        color: $var-info-light;
-    }
-    &-text-light {
-        color: $var-light;
-    }
-    &-text-white {
-        color: $var-white;
-    }
-    &-text-black {
-        color: $var-black;
-    }
+
     /* FONT */
-    &-font-xxsmall {
-        font-size: 10px;
-    }
-    &-font-xsmall {
+    &-font-12 {
         font-size: 12px;
     }
-    &-font-small {
+    &-font-14 {
         font-size: 14px;
     }
-    &-font-medium {
+    &-font-16 {
         font-size: 16px;
     }
-    &-font-mmlarge {
-        font-size: 18px;
-    }
-    &-font-mlarge {
+    &-font-20 {
         font-size: 20px;
     }
-    &-font-large {
-        font-size: 24px;
+    &-font-22 {
+        font-size: 22px;
     }
-    &-font-mmxlarge{
-        font-size: 26px;
-    }
-    &-font-mxlarge {
-        font-size: 28px;
-    }
-    &-font-mxxlarge {
+    &-font-30 {
         font-size: 30px;
     }
-    &-font-mxxxlarge {
-        font-size: 32px;
-    }
-    &-font-xlarge {
-        font-size: 36px;
-    }
-    &-font-exlarge {
+    &-font-40 {
         font-size: 40px;
     }
-    &-font-xxlarge {
-        font-size: 46px;
-    }
-    &-font-mglarge {
-        font-size: 60px;
-    }
 
-    &-font-w-thin {
+
+    &-font-thin {
         font-weight: 300;
     }
-    &-font-w-light {
+    &-font-light {
         font-weight: 400;
     }
-    &-font-w-regular {
+    &-font-regular {
         font-weight: 500;
     }
-    &-font-w-semi-bold {
+    &-font-semi-bold {
         font-weight: 700;
     }
-    &-font-w-bold {
+    &-font-bold {
         font-weight: 800;
     }
-    &-font-w-black {
+    &-font-black {
         font-weight: 900;
     }
 
-    &-box-shadows{
-       box-shadow: $var-r-box-shadow;
-    }
+
     /* Alignments */
     &-text {
         &-center {
@@ -237,73 +104,6 @@ $var-r-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
         }
     }
     /* letter spacing */
-
-    
-      /* ELEMENTS (button) */
-      @mixin mix-button-restyling($textColor, $bgColor, $textColorHover, $bgColorHover, $activeBgColor, $borderRadius, $borderColor) {
-        color: $textColor;
-        background-color: $bgColor;
-        padding: 12px 12px;
-        display: inline-block;
-        border: 1px solid $borderColor;
-        border-radius: $borderRadius;
-        text-decoration: none;
-        line-height: 1;
-        cursor: pointer;
-    
-        &:hover {
-          background: $bgColorHover;
-          color: $textColorHover;
-          border: 1px solid $bgColorHover;
-        }
-    
-        &.outline {
-          color: $bgColor;
-          background: white;
-          font-weight: 700;
-        }
-    
-        &:focus {
-          outline: none;
-        }
-    
-        &.outline:hover {
-          background: $bgColorHover;
-          color: white;
-        }
-    
-        &.outline:disabled {
-          background: $var-r-bg-disabled;
-          color: $var-secondary;
-          border: 1px solid $var-r-bg-disabled
-        }
-    
-        &:disabled {
-          background: $var-r-bg-disabled;
-          color: $var-secondary;
-          border: none;
-          cursor: auto;
-        }
-    
-        &:active {
-          background: $activeBgColor;
-          color: $textColorHover;
-          border: 1px solid $activeBgColor;
-        }
-      }
-    
-      &-button-primary {
-        @include mix-button-restyling($var-white, $var-primary, $var-white, $var-primary-light, $var-primary-dark, $var-r-button-border-radius, $var-primary);
-      }
-    
-      &-button-white {
-        @include mix-button-restyling($var-primary, $var-r-trasparence, $var-white, $var-primary-light, $var-primary-dark, $var-r-button-border-radius, $var-primary);
-      }
-    
-      &-button-border-white {
-        @include mix-button-restyling($var-white, $var-r-trasparence, $var-white, $var-primary-light, $var-primary-dark, $var-r-button-border-radius, $var-white);
-      }
-    
       /*letter spacing example:rr-ls-2*/
       @for $i from 1 through 10 {
         &-ls-#{$i * 1} {

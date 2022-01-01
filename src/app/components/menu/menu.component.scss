@@ -1,25 +1,56 @@
+$navbar_height:100px;
+
 .navbar{
-    height: 100px;
+    height: $navbar_height;
     background-color:black;
     .navbar__logo{
         float: left;
         width:50%;
         //background-color:red;
-        height: 100px;
+        height: $navbar_height;
     }
     .navbar__menu{
         float: left;
         width:50%;
        // background-color:green;
-        height: 100px;
+        height: $navbar_height;
+        display: flex;
+        justify-content: flex-end;
     ul{
+        height: $navbar_height;
+        margin-top: 0;
+        margin-bottom: 0;
        
         li{
-            display: inline;
+            height: $navbar_height;
+            display: inline-block;
             margin-right: 10px;
             
             a{
+                height: $navbar_height;
                 color: white;
+                text-decoration: none;
+                position: relative;
+               
+                display: flex;
+                align-items: center;
+            
+                .navbar__menu_label{
+           
+                 display: block;
+                 width: 100%;
+                }
+            
+                &.active{
+                    color:#FF3690;
+                    .navbar__menu_line{
+                        position: absolute;
+                        bottom:-2px;
+                        display: block;
+                        width: 100%;
+                        border-bottom: 2px solid #FF3690;
+                    }
+                }
             }
         }
     }
