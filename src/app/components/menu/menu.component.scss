@@ -8,6 +8,10 @@ $navbar_height:100px;
         width:50%;
         //background-color:red;
         height: $navbar_height;
+        .navbar__logo__img{
+            height: $navbar_height;
+            width: 200px;
+        }
     }
     .navbar__menu{
         float: left;
