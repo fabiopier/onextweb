@@ -13,7 +13,7 @@ import { MenuComponent} from './components/menu/menu.component';
 import { HeaderComponent} from './components/header/header.component';
 import { LoginComponent} from './pages/login/login.component';
 import { DashboardComponent} from './pages/dashboard/dasboard.component';
-
+import { BooksService } from './services/books.service';
 import { HomeComponent} from './pages/home/home.component';
 import { WhoweareComponent} from './pages/whoweare/whoweare.component';
 import { PortfolioComponent} from './pages/portfolio/portfolio.component';
@@ -54,7 +54,7 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
     MatTableModule,
     FormsModule,
   ],
-  providers: [UserService,UseroldService],
+  providers: [UserService,UseroldService,BooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
