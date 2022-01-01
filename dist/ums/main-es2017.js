@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/header/header.component */ 3646);
 /* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/login/login.component */ 4902);
 /* harmony import */ var _pages_dashboard_dasboard_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/dashboard/dasboard.component */ 3045);
-/* harmony import */ var _services_books_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/books.service */ 178);
+/* harmony import */ var _services_books_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/books.service */ 639);
 /* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/home/home.component */ 5245);
 /* harmony import */ var _pages_whoweare_whoweare_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/whoweare/whoweare.component */ 9946);
 /* harmony import */ var _pages_portfolio_portfolio_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/portfolio/portfolio.component */ 9804);
@@ -656,7 +656,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "HomeComponent": function() { return /* binding */ HomeComponent; }
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2316);
-/* harmony import */ var _services_books_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/books.service */ 178);
+/* harmony import */ var _services_books_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/books.service */ 639);
 
 
 class HomeComponent {
@@ -1270,7 +1270,7 @@ WhoweareComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0
 
 /***/ }),
 
-/***/ 178:
+/***/ 639:
 /*!*******************************************!*\
   !*** ./src/app/services/books.service.ts ***!
   \*******************************************/
