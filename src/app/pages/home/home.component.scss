@@ -66,6 +66,13 @@
         width: 350px;
         background-color: white;
         border-radius: 10px;
+       
+        .headerForm__head{
+          background-color: #005C8E;
+          border-top-left-radius:5px;
+          border-top-right-radius:5px;
+          color: white;
+        }
       }
     }
   }
@@ -73,6 +80,10 @@
  
 }
 
-
+.services{
+  .services__header{
+    width: 50%;
+  }
+}
 
             

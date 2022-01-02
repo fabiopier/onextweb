@@ -107,6 +107,14 @@
 }
 .xx-input {
   border: 1px solid #DDDDDD;
+  padding: 10px;
+}
+.xx-input:focus {
+  border: 1px solid #0090DF;
+}
+.xx-input:focus-visible {
+  outline: none;
+  border: 1px solid #0090DF;
 }
 .xx-button-secondary {
   background-color: #D56491;
