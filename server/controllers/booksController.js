@@ -5,13 +5,15 @@ exports.getPost = (req, res, next) => {
 
 
     console.log('questo è get books');
+    res.json({ status: 200, data: {test:"ok"} })
+    /*
     db.execute('SELECT * FROM books')
         .then(([rows, fieldData]) => {
             console.log(rows)
             res.json({ status: 200, data: rows })
         })
         .catch(err => console.log(err));
-
+*/
 
 };
 

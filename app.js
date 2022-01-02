@@ -32,6 +32,7 @@ const User = require('./server/models/user');
 const Like = require('./server/models/like');
 const Books = require('./server/models/book');
 
+console.log("start lettura log");
 User.hasMany(Post);
 Post.belongsTo(User,{ constraints : true, onDelete : 'CASCADE'});
 
