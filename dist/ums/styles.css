@@ -105,6 +105,20 @@
 .xx-font-black {
   font-weight: 900;
 }
+.xx-input {
+  border: 1px solid #DDDDDD;
+}
+.xx-button-secondary {
+  background-color: #D56491;
+  border: 0;
+  padding: 15px;
+  font-size: 22px;
+  font-family: lato;
+  border-radius: 5px;
+}
+.xx-button-secondary:hover {
+  background-color: #FF3690;
+}
 .xx-text-center {
   text-align: center;
 }

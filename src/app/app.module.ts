@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatGridListModule} from '@angular/material/grid-list';
 import { MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './pages/users/users.component';
@@ -19,7 +20,6 @@ import { WhoweareComponent} from './pages/whoweare/whoweare.component';
 import { PortfolioComponent} from './pages/portfolio/portfolio.component';
 import { ServicesComponent} from './pages/services/services.component';
 import { ContactComponent} from './pages/contact/contact.component';
-
 import { UserService } from './services/users.service';
 import { UseroldService } from './services/usersold.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -53,6 +53,7 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
     MatGridListModule,
     MatTableModule,
     FormsModule,
+    MatFormFieldModule
   ],
   providers: [UserService,UseroldService,BooksService],
   bootstrap: [AppComponent]

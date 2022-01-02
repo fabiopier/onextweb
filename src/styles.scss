@@ -123,7 +123,22 @@ $var-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
     &-font-black {
         font-weight: 900;
     }
+    
+    &-input{
+      border: 1px solid #DDDDDD;
+    }
 
+    &-button-secondary{
+       background-color:$var-secondary-light;
+       border: 0;
+       padding: 15px;
+       font-size: 22px;
+       font-family: lato;
+       border-radius: 5px;
+       &:hover{
+         background-color: $var-secondary;
+       }
+    }
 
     /* Alignments */
     &-text {
@@ -231,6 +246,8 @@ $var-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
         }
       }
 
+    
+
     @media only screen and (max-width: 991px) {
  
         @for $i from 5 through 24 {
@@ -264,3 +281,4 @@ body{
    padding-left: 10px;
    padding-right: 10px;
 }
+

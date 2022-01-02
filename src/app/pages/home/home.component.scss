@@ -14,10 +14,13 @@
     background-color: rgba(0,0,0,0.5);
   }
   .headerContainer{
-    position: relative;
+   position: relative;
   .header{
     position: absolute;
+    width: 100%;
     .header__left{
+      width: 50%;
+      float: left;
       .header__left__footer{
         margin-top: 200px;
         .header__left__footer__left, .header__left__footer__right{
@@ -52,7 +55,18 @@
       }
     }
     .header__right{
-
+      width: 50%;
+      float: left;
+      display: flex;
+      justify-content:center;
+      .headerForm{
+        top:300px;
+        position: absolute;
+        height: 600px;
+        width: 350px;
+        background-color: white;
+        border-radius: 10px;
+      }
     }
   }
 }
