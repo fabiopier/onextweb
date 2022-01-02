@@ -19,23 +19,33 @@
     position: absolute;
     .header__left{
       .header__left__footer{
-        .header__left__footer__left{
+        margin-top: 200px;
+        .header__left__footer__left, .header__left__footer__right{
+          width: 50%;
+          float: left;
+          .header__left__footer__contain__line{
+            .header__left__footer__contain__line__contain{
+              height: 10px;
+              width: 94%;
+              margin-left: 3%;
+             border-top: 2px solid white;
+            }
+          }
           .header__left__footer__contain__icon{
+            float: left;
+            width: 50px;
+            .header__left__footer__contain__icon__contain{
+
+            }
 
           }
           .header__left__footer__contain__label{
-
+            width: Calc(100% - 50px);
+            float: left
           }
 
         }
-        .header__left__footer__right{
-          .header__left__footer__contain__icon{
 
-          }
-          .header__left__footer__contain__label{
-
-          }
-        }
       }
     }
     .header__right{
