@@ -34,8 +34,11 @@
           .header__left__footer__contain__icon{
             float: left;
             width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             .header__left__footer__contain__icon__contain{
-
+                  margin-top: 10px;
             }
 
           }
