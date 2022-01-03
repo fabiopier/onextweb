@@ -1160,5 +1160,29 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: flex;
+}
+.align-object-left {
+  justify-content: left;
+}
+.align-object-right {
+  justify-content: right;
+}
+.align-object-center {
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 
 /*# sourceMappingURL=styles.css.map*/
