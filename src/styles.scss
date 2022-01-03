@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
-
+//@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 /* library*/
 $prefix: ".xx";
 
@@ -139,6 +139,7 @@ $var-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
     &-button-secondary{
        background-color:$var-secondary-light;
        border: 0;
+       color:white;
        padding: 15px;
        font-size: 22px;
        font-family: lato;
@@ -164,56 +165,63 @@ $var-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
       /*letter spacing example:rr-ls-2*/
       @for $i from 1 through 10 {
         &-ls-#{$i * 1} {
-          letter-spacing: $i * 1px !important;
+          letter-spacing: $i * 1px ;
         }
       }
     
       /*height*/
       @for $i from 1 through 15 {
         &-h-#{$i * 50} {
-          height: $i * 50px !important;
+          height: $i * 50px ;
         }
       }
     
       /*min height*/
       @for $i from 1 through 10 {
         &-minh-#{$i * 50} {
-          min-height: $i * 50px !important;
+          min-height: $i * 50px ;
         }
       }
     
        /*max-height */
        @for $i from 1 through 15 {
         &-mh-#{$i * 50} {
-          max-height: $i * 50px !important;
+          max-height: $i * 50px ;
         }
       }
     
       /*width*/
       @for $i from 1 through 15 {
         &-w-#{$i * 50} {
-          width: $i * 50px !important;
+          width: $i * 50px ;
         }
       }
     
       /*min width*/
       @for $i from 1 through 10 {
         &-minw-#{$i * 50} {
-          min-width: $i * 50px !important;
+          min-width: $i * 50px ;
         }
       }
     
       /*max width*/
       @for $i from 1 through 15 {
         &-mw-#{$i * 50} {
-          max-width: $i * 50px !important;
+          max-width: $i * 50px ;
+        }
+      }
+
+
+      @for $i from 1 through 10 {
+        &-wp-#{$i * 10} {
+          width: $i * 10% ;
         }
       }
 
 
       @for $i from 0 through 15 {
         &-p-#{$i * 5} {
-          padding: $i * 5px !important;
+          padding: $i * 5px ;
         }
       }
 
@@ -224,14 +232,14 @@ $var-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
       @each $side in $directions {
           @for $i from 0 through 10 {
               &-p-#{$side}-#{$i *5} {
-                  padding-#{$side}: $i * 5px !important;
+                  padding-#{$side}: $i * 5px ;
               }
           }
       }
 
       @for $i from 0 through 15 {
         &-m-#{$i * 50} {
-          margin: $i * 5px !important;
+          margin: $i * 5px ;
         }
       }
     
@@ -242,7 +250,7 @@ $var-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
       @each $side in $directions {
           @for $i from -15 through 15 {
               &-m-#{$side}-#{$i * 5} {
-                  margin-#{$side}: $i * 5px !important;
+                  margin-#{$side}: $i * 5px ;
               }
           }
       }
@@ -250,7 +258,7 @@ $var-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
       /*z-index */
       @for $i from 1 through 15 {
         &-zi-#{$i * 1} {
-          z-index: $i * 1 !important;
+          z-index: $i * 1 ;
         }
       }
 

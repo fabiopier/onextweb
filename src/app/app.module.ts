@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { MatSliderModule } from '@angular/material/slider';
 import { MatGridListModule} from '@angular/material/grid-list';
 import { MatTableModule} from '@angular/material/table';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule} from '@angular/material/input';
+import { MatIconModule} from '@angular/material/icon';
+import { MatCardModule} from '@angular/material/card';
+import { MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './pages/users/users.component';
@@ -52,7 +60,12 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
     MatSliderModule,
     MatGridListModule,
     MatTableModule,
+    MatCardModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
     FormsModule,
+    MatMenuModule,
     MatFormFieldModule
   ],
   providers: [UserService,UseroldService,BooksService],
