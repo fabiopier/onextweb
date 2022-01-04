@@ -13,30 +13,20 @@ import { Subscription } from 'rxjs';
 
 export class HomeComponent implements OnInit {
   headerColumn: Number = 1;
-  breakpointObserver_ : Subscription;
+  breakpointObserver_! : Subscription;
   books = [];
 
-  constructor(private booksService: BooksService, breakpointObserver: BreakpointObserver) {
-   this.breakpointObserver_=  breakpointObserver.observe(['(max-width: 1279.98px)']).subscribe(
-      (result: BreakpointState) => {
-        if (result.matches) {
-          console.log('match');
-          this.headerColumn = 2;
-        } else {
-          this.headerColumn = 1;
-        }
-      }
-    )
+  constructor(private booksService: BooksService, private breakpointObserver: BreakpointObserver) {
+
+
   }
 
   ngOnInit() {
-    this.configLayout();
+    this.breakpointObserverLayout();
     this.getBooks();
   }
 
-  configLayout() {
 
-  }
 
   getBooks() {
     this.booksService.getBooks()
@@ -54,6 +44,41 @@ export class HomeComponent implements OnInit {
   callApi() {
     console.log('welcome');
   }
+
+
+  breakpointObserverLayout() {
+    /*
+    XSmall	(max-width: 599.98px)
+    Small	(min-width: 600px) and (max-width: 959.98px)
+    Medium	(min-width: 960px) and (max-width: 1279.98px)
+    Large	(min-width: 1280px) and (max-width: 1919.98px)
+    XLarge	(min-width: 1920px)
+    Handset	(max-width: 599.98px) and (orientation: portrait), (max-width: 959.98px) and (orientation: landscape)
+    Tablet	(min-width: 600px) and (max-width: 839.98px) and (orientation: portrait), (min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape)
+    Web	(min-width: 840px) and (orientation: portrait), (min-width: 1280px) and (orientation: landscape)
+    HandsetPortrait	(max-width: 599.98px) and (orientation: portrait)
+    TabletPortrait	(min-width: 600px) and (max-width: 839.98px) and (orientation: portrait)
+    WebPortrait	(min-width: 840px) and (orientation: portrait)
+    HandsetLandscape	(max-width: 959.98px) and (orientation: landscape)
+    TabletLandscape	(min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape)
+    WebLandscape	(min-width: 1280px) and (orientation: landscape)
+  */ 
+
+    this.breakpointObserver_=  this.breakpointObserver.observe([Breakpoints.Web]).subscribe(
+      (result: BreakpointState) => {
+        if (result.matches) {
+          console.log('match');
+          this.headerColumn = 2;
+        } else {
+          this.headerColumn = 1;
+        }
+      }
+    )
+  }
+
+
+
+
 
   ngOnDestroy() {
     this.breakpointObserver_.unsubscribe
