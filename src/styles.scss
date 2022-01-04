@@ -125,18 +125,6 @@ $var-box-shadow: 0 0.125rem 0.25rem rgba(14, 12, 12, 0.1);
         font-weight: 900;
     }
     
-    &-input{
-      border: 1px solid #DDDDDD;
-      padding: 10px;
-      &:focus{
-        border: 1px solid  $var-primary;
-      }
-      &:focus-visible{
-        outline: none;
-        border: 1px solid  $var-primary;
-      }
-    }
-
     &-button-secondary{
        background-color:$var-secondary-light;
        border: 0;
