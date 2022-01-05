@@ -12,5 +12,5 @@ Basta fare deploy da heroku
 
 è stata rimossa la cartella dist dal git ignore per farlo funzionare su heroku
 
-
-
+# Design
+Grid system Bootstrap e libreria angular material design
